@@ -15,11 +15,11 @@ public class Principal {
 //		questao3_For();
 //		questao4_If(scan);
 //		questao5_While(scan);
-		questao6_Metodos();
+//			questao6_Metodos();
 //	questao7_ScannerIf(scan);
 //		questao8_ForPrint();
 //	questao9_WhileScanner(scan);
-//		questao10_MetodosFor();
+		questao10_MetodosFor();
 //		
 		scan.close();
 	}
@@ -199,7 +199,7 @@ public class Principal {
 		System.out.println("=== QUESTÃO 10 - MÉTODOS + FOR ===");
 		// SEU CÓDIGO AQUI
 		
-		System.out.println();
+		System.out.println(calcularFatorial(5));
 	}
 	
 	// ========================================
@@ -211,7 +211,8 @@ public class Principal {
 			return a;
 		}
 		else {
-		return b; // Remova esta linha e implemente a lógica
+		return b;
+		}// Remova esta linha e implemente a lógica
 	}
 	
 	// ========================================
@@ -220,7 +221,10 @@ public class Principal {
 	// TODO: Implemente este método para calcular o fatorial de um número
 	// Use um laço for para fazer o cálculo
 	public static long calcularFatorial(int n) {
-		// SEU CÓDIGO AQUI
-		return 0; // Remova esta linha e implemente a lógica
+		int num=1;
+		for(int i=n;i>=1;i--) {
+		num=num*i;
+		}
+		return(num);
 	}
 }
